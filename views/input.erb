@@ -1,0 +1,12 @@
+<h1><%= @description %></h1>
+
+<form action="/output">
+  <div class="form-group">
+    <label for="parcel">Enter the parcel's weight and dimensions</label>
+    <input id="l" name="length" class="form-control" type="number" placeholder="length">
+    <input id="wi" name="width" class="form-control" type="number" placeholder="width">
+    <input id="h" name="height" class="form-control" type="number" placeholder="height">
+    <input id="we" name="weight" class="form-control" type="number" placeholder="weight">
+  </div>
+  <button type="submit" class="btn btn-success">Leetspeak It!</button>
+</form>

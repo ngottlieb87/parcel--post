@@ -1,5 +1,5 @@
 class Parcel
-  def initialize(height, width, length, weight)
+  def initialize(length, width, height, weight)
     @height = height
     @width = width
     @length = length
@@ -7,11 +7,10 @@ class Parcel
   end
 
   def volume
-    volume = @height*@width*@length
+    volume = @height.to_i*@width.to_i*@length.to_i
   end
 
   def cost_to_ship
-    price = volume*@weight
-    price
+    price = volume*@weight.to_i
   end
 end
