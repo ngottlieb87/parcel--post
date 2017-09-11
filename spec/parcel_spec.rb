@@ -10,7 +10,7 @@ describe('Parcel') do
   end
   describe('#cost_to_ship') do
     it('will calculate the cost, given the volume and weight') do
-      expect(Parcel.new(5,5,5,5).cost_to_ship).to(eq(625))
+      expect(Parcel.new(5,5,5,5).cost_to_ship).to(eq(8))
     end
   end
 end
